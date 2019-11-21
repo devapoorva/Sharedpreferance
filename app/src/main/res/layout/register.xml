@@ -1,0 +1,50 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay_image"
+        android:layout_marginTop="80dp"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_android"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_email"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/lay_image"
+        android:background="@drawable/edittext_stlye"
+        android:hint="Enter Email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_password"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/edt_email"
+        android:background="@drawable/edittext_stlye"
+        android:hint="Enter password"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_password"
+        android:text="Register"
+        android:onClick="register"
+        android:background="@drawable/btn_circle"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_register"/>
+</RelativeLayout>

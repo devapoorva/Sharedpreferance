@@ -1,0 +1,39 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay_image"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_android"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_image"
+        android:text="Login"
+        android:onClick="gotoLogin"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_circle"
+        android:id="@+id/btn_login"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:text="Register"
+        android:onClick="gotoRegister"
+        android:background="@drawable/btn_circle"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_register"/>
+</RelativeLayout>
