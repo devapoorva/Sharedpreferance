@@ -13,11 +13,11 @@ import com.niks.sharedpreferance.R;
 
 public class Register extends AppCompatActivity {
 
-    EditText email,password;
+    private EditText email,password;
     private String userEmail,userpassword;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
         initializeView();
